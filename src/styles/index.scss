@@ -1,0 +1,119 @@
+@import './settings/settings';
+@import'./components/components';
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: $black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #23272f;
+    color: $white;
+}
+
+h1 {
+    margin: 0 0 0.75rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    @media (min-width: $screen-md) {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.tst-container {
+    max-width: 26rem; // 416px
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+
+    @media (min-width: $screen-md) {
+        padding: 4rem 5rem;
+    }
+}
+
+
+// Form Level Styles
+.tst-form {
+    margin-top: 1.75rem;
+
+    @media (min-width: $screen-md) {
+        margin-top: 2.5rem;
+    }
+}
+
+.tst-input:not(:first-child) {
+    margin-top: 2.5rem;
+}
+
+.tst-btn {
+    margin: 2rem auto 0;
+}

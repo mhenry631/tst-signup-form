@@ -1,0 +1,65 @@
+.tst-input {
+    position: relative;
+
+    padding: 15px 0 0;
+
+    &__label {
+        display: block;
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        transition: all 0.25s;
+        color: $white;
+    }
+
+    &__field {
+        margin-top: 0.25rem;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid $white;
+        outline: 0;
+        background: transparent;
+        padding: 7px 0;
+        font-size: 1rem;
+        color: $white;
+        transition: border-color 0.25s;
+
+        &:required,
+        &:invalid {
+            box-shadow: none;
+        }
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:placeholder-shown ~ .tst-input__label {
+            top: 1.25rem;
+            font-size: 1.25rem;
+            cursor: text;
+        }
+    }
+
+
+    &__field:focus {
+
+        &~ .tst-input__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: cyan;
+            // font-weight: 700;    
+        }
+
+        padding-bottom: 6px;  
+        font-weight: 700;
+        border-width: 3px;
+        border-color: cyan;
+        /* border-image: linear-gradient(lightblue);
+        border-image-slice: 1; */
+    }
+
+}
